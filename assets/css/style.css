@@ -1,0 +1,116 @@
+body{
+    background: rgb(184, 125, 15);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+img{
+    width: 70%;
+    height: 60%;
+    border-radius: 20px;
+} 
+h1 {
+    text-align: center;
+    font-size: 40px
+}
+h2{
+    text-align: center;
+    font-size: 2.0em;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+.menu-1 p{
+    font-weight: bold;
+}
+span.color-rojo {
+    color: rgb(119, 96, 96); 
+}
+.header-1{
+    background: rgb(128, 87, 0);
+   grid-area: header;
+   border-radius: 20px;
+}
+.menu-1{
+    background: rgb(184, 125, 15);
+    grid-area: menus;
+}
+.grid{
+    display: flex;
+    margin: 0;
+    gap: 12px;
+    background: rgb(184, 125, 15);
+    grid-area: main;
+    padding: 10px 0;
+}
+footer{
+    background: rgb(105, 33, 0);
+    grid-area: footer;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; 
+    height: 30px;
+    font-weight: bold;
+}
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(8em, 14em) 1fr;
+    grid-template-rows: 5em 1fr 4em;
+    grid-template-areas: 
+    "header header"
+     "menus main"
+     "footer footer";
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    background: brown;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+     width: 80%; 
+     height: 94%;
+     margin: 0%;
+}
+.menu-1{
+    display: flex;
+    flex-direction: column;
+}
+.button-under{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+}
+button {
+background: blue;
+border: none;
+width: 24em; 
+height: 4em; 
+font-size: 18px;
+
+}
+button {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+.mi-boton {
+    text-decoration: line-through; 
+    text-decoration-thickness: 2px;
+    text-decoration-color: red; 
+}
